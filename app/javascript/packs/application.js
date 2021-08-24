@@ -12,5 +12,5 @@ require("channels")
 require("selectize")
 require("components/post")
 
-
+import "stylesheets/application";
 import 'bootstrap'

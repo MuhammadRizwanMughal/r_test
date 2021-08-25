@@ -8,6 +8,13 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def index
+    search = {}
+    search['name_cont'] = params[:search]
+    @categories = Category.ransack(search).result(distinct: true).map{|cat| {value: cat.id, text: cat.name}}
+    render json: @categories, status: :ok
+  end
+
   private
 
     def category_params

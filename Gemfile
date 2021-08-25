@@ -19,6 +19,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 
 gem 'selectize-rails'
+gem 'ransack'
 
 gem 'bootstrap', '~> 5.1'
 
